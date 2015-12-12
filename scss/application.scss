@@ -257,10 +257,9 @@ body {
 		padding: 6.5rem 0;
 		text-align: center;
 		list-style: none;
+		a {text-decoration: none;}
 		li {
-			padding: 0 0 7rem 0;
-		}
-		a {
+			padding: 6rem 0;
 			width: 100%;
 			min-height: 18rem;
 			margin: 0 0;
@@ -282,11 +281,33 @@ body {
 					color: lighten($dark, 10%);
 				}
 				&:hover {
-				h2, p {
-					transition: .2s ease-in-out;
-					color: darken($dark, 5%);
+					h2, p {
+						transition: .2s ease-in-out;
+						color: darken($dark, 5%);
+					}
 				}
-			}
+				.tech {
+					text-align: left;
+					h4 {
+						padding-top: 1rem;
+						color: $dark;
+					}
+					ul {
+						margin: 0 auto;
+						padding: 0;
+						li {
+							margin: 0 .4rem 0 0;
+							border-bottom: 1px solid #BDBDBD;
+					    width: 4rem;
+					    float: left;
+					    padding: .1rem 0;
+					    min-height: 2rem;
+							p {
+								font-size: .7rem;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -307,7 +328,7 @@ body {
 		}
 	}
 	.inner {
-		height: 70vh;
+		height: 50vh;
 		background-color: $blue;
 	}
 }
@@ -316,7 +337,7 @@ body {
 #footer {
 	width: 100%;
 	margin: 0;
-	padding: 1.5rem;
+	padding: 1.3rem;
 	background-color: $red; 
 	.copyright {
 		float: left;
@@ -344,8 +365,7 @@ body {
 	}
 }
 
-
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 980px) {
 	#front-page {
 		/*background-image: url("../assets/mac.png"); */
 		background: none;
@@ -357,41 +377,23 @@ body {
 		} 
 	}
 	#projects {
-	width: 100%;
-	ul {
-		margin: 0;
-		padding: 6.5rem 6rem;
-	
-		li {
-			padding: 0 0 7rem 0;
-			margin-bottom: 32rem;
-		}
-		a {
-			img { 
-				width: 50%;
-				float: left;
-				max-width: 50%;
-			}
-			.project_overview {
-				float: right;
-				width: 50%;
-				padding: 1rem 4rem;
-				text-align: left;
-				h2 {
-					font-weight: 700;
-					font-size: 1.9rem;
-					color: $dark;
+		ul {
+			list-style: none;
+			li {
+				padding:5rem 5rem;
+				display: inline-block;
+				img {
+					width: 50%;
+					float: left;
 				}
-				p {
-					font-size: 1.3rem;
+				.project_overview {
+					padding: 2rem 5rem;
+					width: 50%;
+					float: right;
 				}
-			}
-			.hr_short {
-				display: none;
 			}
 		}
 	}
-}
 }
 
 @media only screen and (max-width: 1100px) {

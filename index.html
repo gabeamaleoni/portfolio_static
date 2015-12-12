@@ -6,74 +6,152 @@
   <link href="css/application.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
-
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
   <!-- fonts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </head>
 
 <body>
-<header id="main_header" class="cf">
-	<div class="wrapper_wide inner">
-		<nav>
-			<ul>
-				<a href="#projects"><li>Projects</li></a>
-				<a href="#contact"><li>Contact</li></a>
-			</ul>
-		</nav>
-	</div>
-</header>
-
-<!-- Intro -->
-<div id="front-page">
-	<div class="wrapper">
-		<div class="inner">
-			<h1 class="title">Hey, I'm Gabriel</h1>
-			<p class="sub_title">I spend my time designing stuff, coding stuff, woodworking and being outside.</p>
-			<div class="links">
-				<a href="#info"><i class="fa fa-chevron-down"></i></a>
-			</div>
+	<header id="main_header" class="cf">
+		<div class="wrapper_wide inner">
+			<nav>
+				<ul>
+					<a href="#projects"><li>Projects</li></a>
+					<a href="#contact"><li>Contact</li></a>
+				</ul>
+			</nav>
 		</div>
-	</div>
-</div>
+	</header>
 
-<!-- INFO SECTION -->
-<div id="info">
-	<div class="top"></div>
-		<div class="info_inner">
-			<div class="wrapper">
-				<div class="inner">
-					<!-- <img src="/assets/course_icons.svg" alt="Planning, Designing, Coding &amp; Launching" class="course_icons">-->
-					<h2 class="title">Self-taught, curious homosapien.</h2>
-					<p class="sub_title">Below are some of the projects I've been working on.</p>
-					<a href="#contact" class="button">Get in touch</a>
+	<!-- Intro -->
+	<div id="front-page">
+		<div class="wrapper">
+			<div class="inner">
+				<h1 class="title">Hey, I'm Gabriel</h1>
+				<p class="sub_title">I spend my time designing stuff, coding stuff, woodworking and being outside.</p>
+				<div class="links">
+					<a href="#info"><i class="fa fa-chevron-down"></i></a>
 				</div>
 			</div>
 		</div>
-	<div class="bottom"></div>
-</div>
-
-
-<!-- PROJECTS SECTION -->
-<div id="projects">
-	<ul class="cf">
-		<li>
-			<div class="wrapper project_overview">
-			<h2>Title</h2>
-			<p>Description</p>
-			</div>
-			<div>
-				<hr class="hr_short">
-			</div>
-		</li>
-	</ul>
-</div>
-
-<!-- CONTACT -->
-<div id="contact">
-	<div class="circle">
-			<p class="sub_title">Let's Connect</p>
-		</div>
-	<div class="inner">
 	</div>
-</div>
 
+	<!-- INFO SECTION -->
+	<div id="info">
+		<div class="top"></div>
+			<div class="info_inner">
+				<div class="wrapper">
+					<div class="inner">
+						<!-- <img src="/assets/course_icons.svg" alt="Planning, Designing, Coding &amp; Launching" class="course_icons">-->
+						<h2 class="title">Self-taught, curious homosapien.</h2>
+						<p class="sub_title">Below are some of the projects I've been working on.</p>
+						<a href="#contact" class="button">Get in touch</a>
+					</div>
+				</div>
+			</div>
+		<div class="bottom"></div>
+	</div>
+
+
+	<!-- PROJECTS SECTION -->
+	<div id="projects" >
+		<ul class="cf">
+			<div class="project_item">
+				<li>
+					<a href="http://ventur.herokuapp.com/" target="blank">
+					<img src="img/ventur.png" alt="ventur">
+					<div class="wrapper project_overview">
+						<h2>ventur</h2>
+						<p>Took concept from design to code. ventur is a platform for sharing your adventure-travel stories with a philanthropic twist - we integrate an affiliate program with outdoor retailers to make traveling for a cause as simple as sharing the gear that you bring to make a trip happen.</p>
+					</a>
+					<hr>
+						<div class="tech">
+							<h4>Technology used:</h4>
+							<ul>
+								<li><p>HTML5</p></li>
+								<li><p>CSS3</p></li>
+								<li><p>Sass</p></li>
+								<li><p>Ruby</p></li>
+								<li><p>Rails 4</p></li>
+								<li><p>SQL</p></li>
+								<li><p>JavaScript</p></li>
+								<li><p>JQuery</p></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</div>
+			<hr class="hr_short">
+			<div class="project_item">
+				<li>
+					<a href="http://sunsetwoodworks.com/" target="blank">
+					<img src="img/sww.png" alt="ventur">
+					<div class="wrapper project_overview">
+						<h2>Sunset Woodworks</h2>
+						<p>I built this website for my woodworking/art project from using twitter Bootstrap. The page consists of a clean, fully responsive portfolio that showcases the various art pieces.</p>
+					</a>
+					<hr>
+						<div class="tech">
+							<h4>Technology used:</h4>
+							<ul>
+								<li><p>Bootstap 3</p></li>
+								<li><p>CSS3</p></li>
+								<li><p>JavaScript</p></li>
+								<li><p>PHP</p></li>
+								<li><p>JQuery</p></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</div>
+			<hr class="hr_short">
+			<div class="project_item">
+				<li>
+					<a href="http://sunsetwoodworks.com/" target="blank">
+					<img src="img/portfolio.jpg" alt="ventur">
+					<div class="wrapper project_overview">
+						<h2>This very website</h2>
+						<p>I hand-coded the HTML and CSS on this personal portfolio site.</p>
+					</a>
+					<hr>
+						<div class="tech">
+							<h4>Technology used:</h4>
+							<ul>
+								<li><p>HTML5</p></li>
+								<li><p>CSS3</p></li>
+								<li><p>Sass</p></li>
+								<li><p>JavaScript</p></li>
+								<li><p>JQuery</p></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</div>
+		</ul>
+	</div>
+
+	<!-- CONTACT -->
+	<div id="contact">
+		<div class="circle">
+				<p class="sub_title">Let's Connect</p>
+			</div>
+		<div class="inner">
+		</div>
+	</div>
+
+	<!-- FOOTER -->
+	<div id="footer" class="cf">
+		<div class="copyright">
+			<p>&copy; 2016 Gabriel Leoni</p>
+		</div>
+		<nav class="footer_nav">
+			<div class="links">
+					<a href="https://github.com/gabeamaleoni" target="blank" ><i class="fa fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/gabrielleoni" target="blank"><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.instagram.com/sunsetwoodworks/" target="blank"><i class="fa fa-instagram"></i></a>
+			</div>
+		</nav>
+	</div>
+	<script src="js/app.js"></script>
+</body>
+</html>

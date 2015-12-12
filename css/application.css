@@ -570,29 +570,47 @@ body {
     padding: 6.5rem 0;
     text-align: center;
     list-style: none; }
-    #projects ul li {
-      padding: 0 0 7rem 0; }
     #projects ul a {
+      text-decoration: none; }
+    #projects ul li {
+      padding: 6rem 0;
       width: 100%;
       min-height: 18rem;
       margin: 0 0;
       text-decoration: none; }
-      #projects ul a img {
+      #projects ul li img {
         width: 100%;
         max-width: 100%;
         border-radius: 0 0; }
-      #projects ul a .project_overview {
+      #projects ul li .project_overview {
         padding: 2rem 0;
         text-align: left; }
-        #projects ul a .project_overview h2 {
+        #projects ul li .project_overview h2 {
           font-weight: 700;
           font-size: 1.4rem;
           color: #454243; }
-        #projects ul a .project_overview p {
+        #projects ul li .project_overview p {
           color: #5f5b5c; }
-        #projects ul a .project_overview:hover h2, #projects ul a .project_overview:hover p {
+        #projects ul li .project_overview:hover h2, #projects ul li .project_overview:hover p {
           transition: .2s ease-in-out;
           color: #383636; }
+        #projects ul li .project_overview .tech {
+          text-align: left; }
+          #projects ul li .project_overview .tech h4 {
+            padding-top: 1rem;
+            color: #454243; }
+          #projects ul li .project_overview .tech ul {
+            margin: 0 auto;
+            padding: 0; }
+            #projects ul li .project_overview .tech ul li {
+              margin: 0 .4rem 0 0;
+              border-bottom: 1px solid #BDBDBD;
+              width: 4rem;
+              float: left;
+              padding: .1rem 0;
+              min-height: 2rem; }
+              #projects ul li .project_overview .tech ul li p {
+                font-size: .7rem; }
 
 #contact .circle {
   text-align: center;
@@ -607,13 +625,13 @@ body {
     font-weight: lighter;
     color: #DA5B5B; }
 #contact .inner {
-  height: 70vh;
+  height: 50vh;
   background-color: #8BABBB; }
 
 #footer {
   width: 100%;
   margin: 0;
-  padding: 1.5rem;
+  padding: 1.3rem;
   background-color: #DA5B5B; }
   #footer .copyright {
     float: left;
@@ -634,7 +652,7 @@ body {
         transition: color .3s ease-in-out;
         color: #6c6769; }
 
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 980px) {
   #front-page {
     /*background-image: url("../assets/mac.png"); */
     background: none;
@@ -644,31 +662,18 @@ body {
     #front-page .inner {
       padding-top: 11rem; }
 
-  #projects {
-    width: 100%; }
-    #projects ul {
-      margin: 0;
-      padding: 6.5rem 6rem; }
-      #projects ul li {
-        padding: 0 0 7rem 0;
-        margin-bottom: 32rem; }
-      #projects ul a img {
+  #projects ul {
+    list-style: none; }
+    #projects ul li {
+      padding: 5rem 5rem;
+      display: inline-block; }
+      #projects ul li img {
         width: 50%;
-        float: left;
-        max-width: 50%; }
-      #projects ul a .project_overview {
-        float: right;
+        float: left; }
+      #projects ul li .project_overview {
+        padding: 2rem 5rem;
         width: 50%;
-        padding: 1rem 4rem;
-        text-align: left; }
-        #projects ul a .project_overview h2 {
-          font-weight: 700;
-          font-size: 1.9rem;
-          color: #454243; }
-        #projects ul a .project_overview p {
-          font-size: 1.3rem; }
-      #projects ul a .hr_short {
-        display: none; } }
+        float: right; } }
 @media only screen and (max-width: 1100px) {
   #front-page {
     background-position: calc(100% + 300px) 15%; } }
