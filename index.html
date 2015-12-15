@@ -22,6 +22,7 @@
 <body>
 	<header id="main_header" class="cf">
 		<div class="wrapper_wide inner">
+			<a href="#front-page"><img src="img/portfolio_logo.png" class="logo" alt="GL"></a>
 			<nav>
 				<ul>
 					<a href="#projects"><li>Projects</li></a>
@@ -69,8 +70,8 @@
 					<a href="http://ventur.herokuapp.com/" target="blank">
 					<img src="img/ventur.png" alt="ventur">
 					<div class="wrapper project_overview">
-						<h2>ventur</h2>
-						<p>Took concept from design to code. ventur is a platform for sharing your adventure-travel stories with a philanthropic twist - we integrate an affiliate program with outdoor retailers to make traveling for a cause as simple as sharing the gear that you bring to make a trip happen.</p>
+						<div class="name"><h2>ventur</h2><span>alpha</span></div>
+						<p>Took concept from idea to design to code. ventur is a platform for sharing adventure-travel stories with a philanthropic twist. We integrate an affiliate program with outdoor retailers to make raising money for charity as simple as sharing the gear that you brought to make your trip happen.</p>
 					</a>
 					<hr>
 						<div class="tech">
@@ -82,6 +83,7 @@
 								<li><p>Ruby</p></li>
 								<li><p>Rails 4</p></li>
 								<li><p>SQL</p></li>
+								<li><p>Git</p></li>
 								<li><p>JavaScript</p></li>
 								<li><p>JQuery</p></li>
 							</ul>
@@ -118,7 +120,7 @@
 					<img src="img/portfolio.jpg" alt="ventur">
 					<div class="wrapper project_overview">
 						<h2>This very website</h2>
-						<p>Hand-coded the HTML, CSS, AngularJS, PHP on this personal portfolio site.</p>
+						<p>Hand-coded the HTML, SCSS, AngularJS (for form validation) and PHP on this personal portfolio site using git for version control.</p>
 					<hr>
 						<div class="tech">
 							<h4>Technology used:</h4>
@@ -126,8 +128,9 @@
 								<li><p>HTML5</p></li>
 								<li><p>CSS3</p></li>
 								<li><p>Sass</p></li>
-								<li><p>Angular JS</p></li>
+								<li><p>AngularJS</p></li>
 								<li><p>JQuery</p></li>
+								<li><p>Git</p></li>
 							</ul>
 						</div>
 					</div>
@@ -159,12 +162,12 @@
           <div ng-controller="ContactController">
               <form ng-submit="submit(contactform)" name="contactform" method="post" action="" role="form" novalidate>
                   <div class="form-group wrapper" >
-                      <div class="col-lg-12" ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
+                      <div ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
                           <input ng-model="formData.inputName" type="text" class="form-control" id="inputName" name="inputName" placeholder="Your Name" required>
                       </div>
                   </div>
                   <div class="form-group wrapper" >
-                      <div class="col-lg-12" ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
+                      <div ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
                           <input ng-model="formData.inputEmail" type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Your Email" required>
                       </div>
                   </div>

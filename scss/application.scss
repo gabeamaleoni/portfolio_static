@@ -38,6 +38,8 @@ $medium-grey: #bfc0c0;
   clear: both;
 }
 
+
+
 body {
 	font-family: 'Lato', sans-serif;
 }
@@ -157,8 +159,6 @@ body {
   }
 }
 
-
-
 #main_header {
 	color: $dark;
 	background: rgba(250, 250, 250, 0.75);
@@ -167,14 +167,10 @@ body {
 	display: block;
 	border-bottom: 1px solid #DEDFE6;
 	z-index: 9999;
-	#logo {
+	.logo {
 		float: left;
-		text-transform: uppercase;
-		font-weight: 700;
-		text-decoration: none;
-		color: $dark;
-		letter-spacing: 3px;
-		padding-top: 1.5rem;
+		width: 65px;
+		padding: 1rem;
 	}
 	nav {
 		float: right;
@@ -244,7 +240,6 @@ body {
 	.info_inner { 
 		background-color: $dark; 
 		padding: 1rem 0 4rem 0;
-
 		.inner { 
 			width: 100%; 
 			max-width: 95%; 
@@ -262,11 +257,12 @@ body {
 				font-size: 1.35rem; 
 				color: lighten($dark, 35%); 
 				margin-bottom: 4rem; 
+				font-weight: 300;
 			}
 		} 
 	}
 	.bottom { 
-		height: 50px; 
+		height: 3rem; 
 		background-color: $dark; 
 	}
 
@@ -275,7 +271,7 @@ body {
 	width: 100%;
 	ul {
 		margin: 0;
-		padding: 6.5rem 0;
+		padding: 2.5rem 0;
 		text-align: center;
 		list-style: none;
 		a {text-decoration: none;}
@@ -298,9 +294,24 @@ body {
 				padding: 2rem 0;
 				text-align: left;
 				h2 {
+					color: $dark;
+				}
+				.name {
+					display: inline-block;
+					width: 12rem;
+					h2 {
 					font-weight: 700;
 					font-size: 1.4rem;
 					color: $dark;
+					float: left;
+					}
+					span {
+						font-size: .8rem;
+						text-decoration: none;
+						color: $medium-grey;
+						float: right;
+    				padding: 1.75rem 5rem 0 0;
+					}
 				}
 				p {
 					color: lighten($dark, 10%);
@@ -354,11 +365,11 @@ body {
 		}
 	}
 	.inner {
-		height: 70vh;
+		height: 80vh;
 		background-color: $dark;
 		form {
 			margin: 0 auto;
-			padding: 3rem 0;
+			padding: 5rem 0;
 			text-align: center;
 			input[type="email"], input[type="text"]{
 				width: 100%;
@@ -383,7 +394,7 @@ body {
 			select:focus,
 			textarea:focus {
 				outline: none;
-			  border-bottom:  1px solid darken($blue, 5%);
+			  border-bottom:  2px solid darken($blue, 5%);
 			} 
 			button {
 				padding: .8rem 1.4rem;
@@ -413,8 +424,6 @@ body {
 .result {
 	color: $white;
 }
-
-
 
 #footer {
 	width: 100%;
@@ -450,14 +459,14 @@ body {
 @media only screen and (min-width: 350px) {
 	#contact {
 		.inner {
+			height: 70vh;
 			form {
-				padding: 9rem 0;
+				padding: 6rem 0;
 				input[type="email"], input[type="text"]{
 					height: 1.5	rem;
 					padding: 2rem 2rem;
 					background: transparent;
 					margin-bottom: 1rem;
-					border-bottom: 2px solid $medium-grey;
 				}
 			}
 		}

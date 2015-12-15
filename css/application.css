@@ -490,14 +490,10 @@ body {
   display: block;
   border-bottom: 1px solid #DEDFE6;
   z-index: 9999; }
-  #main_header #logo {
+  #main_header .logo {
     float: left;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-decoration: none;
-    color: #454243;
-    letter-spacing: 3px;
-    padding-top: 1.5rem; }
+    width: 65px;
+    padding: 1rem; }
   #main_header nav {
     float: right; }
     #main_header nav ul {
@@ -574,16 +570,17 @@ body {
       #info .info_inner .inner .sub_title {
         font-size: 1.35rem;
         color: #9f9b9c;
-        margin-bottom: 4rem; }
+        margin-bottom: 4rem;
+        font-weight: 300; }
   #info .bottom {
-    height: 50px;
+    height: 3rem;
     background-color: #454243; }
 
 #projects {
   width: 100%; }
   #projects ul {
     margin: 0;
-    padding: 6.5rem 0;
+    padding: 2.5rem 0;
     text-align: center;
     list-style: none; }
     #projects ul a {
@@ -605,9 +602,21 @@ body {
         padding: 2rem 0;
         text-align: left; }
         #projects ul li .project_overview h2 {
-          font-weight: 700;
-          font-size: 1.4rem;
           color: #454243; }
+        #projects ul li .project_overview .name {
+          display: inline-block;
+          width: 12rem; }
+          #projects ul li .project_overview .name h2 {
+            font-weight: 700;
+            font-size: 1.4rem;
+            color: #454243;
+            float: left; }
+          #projects ul li .project_overview .name span {
+            font-size: .8rem;
+            text-decoration: none;
+            color: #bfc0c0;
+            float: right;
+            padding: 1.75rem 5rem 0 0; }
         #projects ul li .project_overview p {
           color: #5f5b5c; }
         #projects ul li .project_overview:hover h2, #projects ul li .project_overview:hover p {
@@ -644,11 +653,11 @@ body {
     font-weight: lighter;
     color: #DA5B5B; }
 #contact .inner {
-  height: 70vh;
+  height: 80vh;
   background-color: #454243; }
   #contact .inner form {
     margin: 0 auto;
-    padding: 3rem 0;
+    padding: 5rem 0;
     text-align: center;
     	/* border-radius: 0;
     	color: $medium-grey;
@@ -672,7 +681,7 @@ body {
     #contact .inner form select:focus,
     #contact .inner form textarea:focus {
       outline: none;
-      border-bottom: 1px solid #7b9fb2; }
+      border-bottom: 2px solid #7b9fb2; }
     #contact .inner form button {
       padding: .8rem 1.4rem; }
     #contact .inner form .button_blue:focus {
@@ -720,14 +729,15 @@ body {
         color: #6c6769; }
 
 @media only screen and (min-width: 350px) {
-  #contact .inner form {
-    padding: 9rem 0; }
-    #contact .inner form input[type="email"], #contact .inner form input[type="text"] {
-      height: 1.5	rem;
-      padding: 2rem 2rem;
-      background: transparent;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #bfc0c0; } }
+  #contact .inner {
+    height: 70vh; }
+    #contact .inner form {
+      padding: 6rem 0; }
+      #contact .inner form input[type="email"], #contact .inner form input[type="text"] {
+        height: 1.5	rem;
+        padding: 2rem 2rem;
+        background: transparent;
+        margin-bottom: 1rem; } }
 @media only screen and (min-width: 980px) {
   #front-page {
     /*background-image: url("../assets/mac.png"); */

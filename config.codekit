@@ -49,6 +49,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/portfolio_logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2637,
+		"inputAbbreviatedPath": "\/img\/portfolio_logo.png",
+		"outputAbbreviatedPath": "\/img\/portfolio_logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/sww.png": {
 		"fileType": 32768,
 		"ignore": 0,
