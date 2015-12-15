@@ -24,6 +24,7 @@ $light-grey: #EFF0F0;
 $medium-grey: #bfc0c0;
 
 @import 'normalize';
+@import 'contact';
 
 * {
 	box-sizing: border-box;
@@ -137,6 +138,26 @@ body {
   	border: 1px solid transparent;
   }
 }
+
+.button_blue {
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  line-height: 27px;
+  border-radius: 1px;
+  padding: 1rem 1.7rem;
+  background: transparent;
+  color: $blue;
+  border: 1px solid $blue;
+  &:hover {
+  	transition: .2s ease-in-out;
+  	background: $blue;
+  	color: $dark;
+  	border: 1px solid transparent;
+  }
+}
+
+
 
 #main_header {
 	color: $dark;
@@ -264,10 +285,14 @@ body {
 			min-height: 18rem;
 			margin: 0 0;
 			text-decoration: none;
-			img { 
+			img {
 				width: 100%;
 				max-width: 100%;
 				border-radius: 0 0;
+				&:hover {
+					transition: .2s ease-in-out;
+					opacity: .9;
+				}
 			}
 			.project_overview {
 				padding: 2rem 0;
@@ -312,6 +337,7 @@ body {
 		}
 	}
 }
+
 #contact {
 	.circle {
 		text-align: center;
@@ -328,10 +354,66 @@ body {
 		}
 	}
 	.inner {
-		height: 50vh;
-		background-color: $blue;
+		height: 70vh;
+		background-color: $dark;
+		form {
+			margin: 0 auto;
+			padding: 3rem 0;
+			text-align: center;
+			input[type="email"], input[type="text"]{
+				width: 100%;
+				height: 2.5rem;
+				padding: 1.4rem 1rem;
+				background: transparent;
+				margin-bottom: 1rem;
+				border-bottom: 2px solid $medium-grey;
+				border-top: none;
+				border-right: none;
+				color: $medium-grey;
+			}
+				/* border-radius: 0;
+				color: $medium-grey;
+				border-bottom: 1px solid $medium-grey;
+				margin-top: .5rem;
+				font-color: $medium-grey;
+				box-sizing: border-box;
+			}*/
+			a:focus,
+			input:focus,
+			select:focus,
+			textarea:focus {
+				outline: none;
+			  border-bottom:  1px solid darken($blue, 5%);
+			} 
+			button {
+				padding: .8rem 1.4rem;
+			}
+			.button_blue:focus {
+				outline: none;
+				background: $blue;
+				border: 2px solid $blue;
+				color: white;
+			}
+		}
 	}
 }
+
+.has-error .form-control {
+  border-color: #a94442;
+  border-bottom:  none;
+  /* -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 11px 11px rgba(0, 0, 0, 0.075); */
+}
+.has-error .form-control:focus {
+  border-bottom: none;
+  /* -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 5px #ce8483;
+  box-shadow: inset 0 11px 11px rgba(0, 0, 0, 0.075); */
+}
+
+.result {
+	color: $white;
+}
+
 
 
 #footer {
@@ -365,6 +447,24 @@ body {
 	}
 }
 
+@media only screen and (min-width: 350px) {
+	#contact {
+		.inner {
+			form {
+				padding: 9rem 0;
+				input[type="email"], input[type="text"]{
+					height: 1.5	rem;
+					padding: 2rem 2rem;
+					background: transparent;
+					margin-bottom: 1rem;
+					border-bottom: 2px solid $medium-grey;
+				}
+			}
+		}
+	}
+}
+
+
 @media only screen and (min-width: 980px) {
 	#front-page {
 		/*background-image: url("../assets/mac.png"); */
@@ -393,6 +493,9 @@ body {
 				}
 			}
 		}
+	}
+	#contact .wrapper {
+		width: 50%;
 	}
 }
 
