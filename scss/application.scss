@@ -216,10 +216,10 @@ body {
 			margin: 0.5em 0 0 0; 
 		}
 		.sub_title { 
-			color: #A5A7B9; 
+			color: #6C6D79; 
 			font-size: 1.5em; 
 			margin-bottom: 1rem;
-			font-weight: lighter;
+			font-weight: 300;
 		}
 		.fa {
 			padding: 1rem 0;
@@ -295,6 +295,7 @@ body {
 				text-align: left;
 				h2 {
 					color: $dark;
+					margin: 0;
 				}
 				.name {
 					display: inline-block;
@@ -310,7 +311,7 @@ body {
 						text-decoration: none;
 						color: $medium-grey;
 						float: right;
-    				padding: 1.75rem 5rem 0 0;
+    				padding: .55rem 5rem 0 0;
 					}
 				}
 				p {

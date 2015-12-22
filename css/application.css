@@ -534,10 +534,10 @@ body {
       font-size: 2.5em;
       margin: 0.5em 0 0 0; }
     #front-page .inner .sub_title {
-      color: #A5A7B9;
+      color: #6C6D79;
       font-size: 1.5em;
       margin-bottom: 1rem;
-      font-weight: lighter; }
+      font-weight: 300; }
     #front-page .inner .fa {
       padding: 1rem 0;
       font-size: 1.5rem;
@@ -602,7 +602,8 @@ body {
         padding: 2rem 0;
         text-align: left; }
         #projects ul li .project_overview h2 {
-          color: #454243; }
+          color: #454243;
+          margin: 0; }
         #projects ul li .project_overview .name {
           display: inline-block;
           width: 12rem; }
@@ -616,7 +617,7 @@ body {
             text-decoration: none;
             color: #bfc0c0;
             float: right;
-            padding: 1.75rem 5rem 0 0; }
+            padding: .55rem 5rem 0 0; }
         #projects ul li .project_overview p {
           color: #5f5b5c; }
         #projects ul li .project_overview:hover h2, #projects ul li .project_overview:hover p {
