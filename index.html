@@ -4,19 +4,47 @@
   <title>Gabriel Leoni</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/application.css" rel="stylesheet">
-  
-  <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
 	
   <!-- load font_awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Add JQuery -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+  <!-- Add fancyBox -->
+	<link rel="stylesheet" href="js/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+	<script type="text/javascript" src="js/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  <!-- Add Angular JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
   <script src="js/ng-app.js"></script>
   <script src="js/controllers.js"></script>
   <!-- fonts -->
   <link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
   <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
+
+  <!-- FancyBox Script -->
+  <script type="text/javascript">
+		$(document).ready(function() {
+			$(".fancybox").fancybox({
+		    autoSize: false, // shouldn't be true ?
+		    fitToView: true,
+		    maxWidth: 820,
+		    padding : 0,
+		    helpers : {
+	    	overlay : {
+          css : {
+              'background' : 'rgba(0, 0, 0, 0.75)'
+          }
+	      },
+        title: {
+	        type: 'outside'
+	        }
+		    }
+			});
+		});
+	</script>
+
 </head>
 
 <body>
@@ -120,7 +148,7 @@
 					<img src="img/portfolio.jpg" alt="ventur">
 					<div class="wrapper project_overview">
 						<h2>This very website</h2>
-						<p>Hand-coded the HTML, SCSS, AngularJS (for form validation) and PHP on this personal portfolio site using git for version control.</p>
+						<p>Hand-coded the HTML, SCSS, AngularJS (for form validation) and PHP on this personal portfolio site using Github for version control.</p>
 					<hr>
 						<div class="tech">
 							<h4>Technology used:</h4>
@@ -137,6 +165,52 @@
 				</li>
 			</div>
 		</ul>
+	</div>
+	<div id="gallery">
+		<div class="gallery_title wrapper_wide">
+			<h2>Freelance Design & Development</h2>
+		</div>
+		<div id="gallery_box" class="cf">
+			<div class="gallery_info cf"> 
+				<h3>Coalo Valley Farms Wesite</h3>
+				<p class="sub_title">- Redesigned squarespace website for the LA-based cricket farm <br>
+					<br>
+				- Crafted infographics to convey the environmental benefits of cricket protein</p>
+			</div>
+			<div class="gallery_item">
+				<a title="Landing Page for Squarespace website" class="fancybox" rel="group1" href="img/intro-page-big.jpg"><img src="img/intro-page-small.jpg" alt="Landing Page for Coalo Valley Farms" /></a>
+			</div>
+			<div class="gallery_item">
+				<a title="Call-to-action section for online store" class="fancybox" rel="group1" href="img/cricket_jumping_shop_big.png"><img src="img/cricket_jumping_shop_small.png" alt="Landing Page for Coalo Valley Farms" /></a>
+			</div>
+			<div class="gallery_item">
+				<a title="Infographic to compare resource requirements" class="fancybox" rel="group1" href="img/resource_reqs_big.png"><img src="img/resource_reqs_small.png" alt="Landing Page for Coalo Valley Farms" /></a>
+			</div>
+			<div class="gallery_item cf">
+				<a title="Infographic to compare environmental impacts of cricket protein vs. beef." class="fancybox" rel="group1" href="img/environmental_impact_big.png"><img src="img/environmental_impact_small.png" alt="Landing Page for Coalo Valley Farms" /></a>
+			</div>
+		</div>
+		<div id="gallery_box" class="cf">
+			<div class="gallery_info cf"> 
+				<h3>The Hidden Green Financial Foracasting App</h3>
+				<p class="sub_title">- Designed financial forcasting web app<br>
+					<br>
+				- Delivered wireframes to client (currently working out the backend functionality)</p>
+			</div>
+			<div class="gallery_item">
+				<a title="Infographic to compare resource requirements" class="fancybox" rel="group2" href="img/resource_reqs_big.png"><img src="img/resource_reqs_small.png" alt="Landing Page for Coalo Valley Farms" /></a>
+			</div>
+			<div class="gallery_item">
+				<a title="Infographic to compare environmental impacts of cricket protein vs. beef." class="fancybox" rel="group2" href="img/environmental_impact_big.png"><img src="img/environmental_impact_small.png" alt="Landing Page for Coalo Valley Farms" /></a>
+			</div>
+			<div class="gallery_item">
+				<a title="Landing Page for Squarespace website" class="fancybox" rel="group2" href="img/intro-page-big.jpg"><img src="img/intro-page-small.jpg" alt="Landing Page for Coalo Valley Farms" /></a>
+			</div>
+			
+			<div class="gallery_item cf">
+				<a title="Call-to-action section for online store" class="fancybox" rel="group2" href="img/cricket_jumping_shop_big.png"><img src="img/cricket_jumping_shop_small.png" alt="Landing Page for Coalo Valley Farms" /></a>
+			</div>
+		</div>
 	</div>
 
 	<!-- CONTACT 
@@ -160,13 +234,14 @@
 	<div id="contact"  ng-app="contactApp">
       <div class="inner">
           <div ng-controller="ContactController">
+							<h2 class="title center">Let's connect!</h2>
               <form ng-submit="submit(contactform)" name="contactform" method="post" action="" role="form" novalidate>
                   <div class="form-group wrapper" >
                       <div ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
                           <input ng-model="formData.inputName" type="text" class="form-control" id="inputName" name="inputName" placeholder="Your Name" required>
                       </div>
                   </div>
-                  <div class="form-group wrapper" >
+                  <div class="form-group wrapper cf" >
                       <div ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
                           <input ng-model="formData.inputEmail" type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Your Email" required>
                       </div>

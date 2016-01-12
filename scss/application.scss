@@ -166,7 +166,7 @@ body {
 	width: 100%;
 	display: block;
 	border-bottom: 1px solid #DEDFE6;
-	z-index: 9999;
+	z-index: 100;
 	.logo {
 		float: left;
 		width: 65px;
@@ -198,7 +198,7 @@ body {
 
 .title { font-size: 1.75rem; margin: 0 0 .75rem 0; }
 
-.sub_title { font-size: 1.35rem; margin-bottom: 4rem; }
+
 
 #front-page { 
 	height: 90vh; 
@@ -251,7 +251,7 @@ body {
 			}
 			.title { 
 				font-size: 2.5rem; 
-				font-weight: lighter;
+				font-weight: 300;
 				margin: 0 0 .75rem 0; 
 			}
 			.sub_title { 
@@ -266,8 +266,8 @@ body {
 		height: 3rem; 
 		background-color: $dark; 
 	}
-
 }
+
 #projects {
 	width: 100%;
 	ul {
@@ -351,37 +351,73 @@ body {
 	}
 }
 
-#contact {
-	.circle {
-		text-align: center;
-		width: 20rem;
-		margin: 0 auto -15rem auto;
-		height: 20rem;
-		background-color: transparent;
-		border: 1px solid $red;
-		border-radius: 50%;
-		p {
-			padding: .8rem 5rem 0 5rem;
-			font-weight: lighter;
-			color: $red ;
+#gallery {
+	background-color: $dark;
+	display: inline-block;
+	clear: both;
+	h2 {
+			color: $white;
+			text-align: center;
+			font-size: 2.5rem; 
+			font-weight: 300;
+			padding: 2rem 0;
+		}
+	.gallery_info {
+		background-color: lighten($dark, 3%);
+		padding: 0 0 2rem 0;
+		h3 {
+			color: lighten($dark, 65%); 
+			font-size: 1.5em; 
+			font-weight: 400;
+		}
+		.sub_title {
+			color: lighten($dark, 35%);
+			font-weight: 300;
+			font-size: 1.5em; 
 		}
 	}
+	#gallery_box {
+		background-color: lighten($dark, 3%);
+		padding: 2rem;
+		.gallery_item {
+			padding: .5rem 0;
+			margin: 0 auto;
+			float: center;
+			img {
+				width: 100%;
+				max-width: 100%;
+				&:hover {
+					transition: .2s ease-in-out;
+					opacity: .8;
+				}
+			}
+		}
+	}
+}
+#contact {
+	h2 {
+		color: $white;
+		padding: 4rem 0 0 0;
+		font-size: 2.5rem; 
+		font-weight: 300;
+	}
 	.inner {
-		height: 80vh;
+		min-height: 300px;
 		background-color: $dark;
 		form {
 			margin: 0 auto;
-			padding: 5rem 0;
+			padding: 3rem 0 5rem 0;
 			text-align: center;
 			input[type="email"], input[type="text"]{
 				width: 100%;
-				height: 2.5rem;
+				height: 2rem;
 				padding: 1.4rem 1rem;
 				background: transparent;
 				margin-bottom: 1rem;
 				border-bottom: 2px solid $medium-grey;
 				border-top: none;
 				border-right: none;
+				border-radius: 5px;
 				color: $medium-grey;
 			}
 				/* border-radius: 0;
@@ -458,12 +494,11 @@ body {
 	}
 }
 
-@media only screen and (min-width: 350px) {
+@media only screen and (min-width: 450px) {
 	#contact {
 		.inner {
-			height: 70vh;
 			form {
-				padding: 6rem 0;
+				padding: 2rem 0;
 				input[type="email"], input[type="text"]{
 					height: 1.5	rem;
 					padding: 2rem 2rem;
@@ -475,6 +510,25 @@ body {
 	}
 }
 
+@media only screen and (min-width: 650px) {
+	#gallery {
+		#gallery_box {
+			width: 50%;
+			min-height: 780px;
+			float: left;
+			margin: 0 auto;
+			.gallery_info {
+				min-height: 380px;
+				padding: .5rem;
+			}
+			.gallery_item {
+				float: left;
+				width: 50%;
+				padding: .5rem;
+			}
+		}
+  }
+}
 
 @media only screen and (min-width: 980px) {
 	#front-page {
@@ -491,20 +545,27 @@ body {
 		ul {
 			list-style: none;
 			li {
-				padding:5rem 5rem;
+				padding: 5rem 5rem;
 				display: inline-block;
 				img {
 					width: 50%;
 					float: left;
 				}
 				.project_overview {
-					padding: 2rem 5rem;
+					padding: 0 5rem;
 					width: 50%;
 					float: right;
 				}
 			}
 		}
 	}
+	#gallery {
+		#gallery_box {
+			.gallery_info {
+				min-height: 280px;
+			}
+		}
+  }
 	#contact .wrapper {
 		width: 50%;
 	}

@@ -489,7 +489,7 @@ body {
   width: 100%;
   display: block;
   border-bottom: 1px solid #DEDFE6;
-  z-index: 9999; }
+  z-index: 100; }
   #main_header .logo {
     float: left;
     width: 65px;
@@ -514,10 +514,6 @@ body {
 .title {
   font-size: 1.75rem;
   margin: 0 0 .75rem 0; }
-
-.sub_title {
-  font-size: 1.35rem;
-  margin-bottom: 4rem; }
 
 #front-page {
   height: 90vh;
@@ -565,7 +561,7 @@ body {
         margin-bottom: 2rem; }
       #info .info_inner .inner .title {
         font-size: 2.5rem;
-        font-weight: lighter;
+        font-weight: 300;
         margin: 0 0 .75rem 0; }
       #info .info_inner .inner .sub_title {
         font-size: 1.35rem;
@@ -641,24 +637,52 @@ body {
               #projects ul li .project_overview .tech ul li p {
                 font-size: .7rem; }
 
-#contact .circle {
-  text-align: center;
-  width: 20rem;
-  margin: 0 auto -15rem auto;
-  height: 20rem;
-  background-color: transparent;
-  border: 1px solid #DA5B5B;
-  border-radius: 50%; }
-  #contact .circle p {
-    padding: .8rem 5rem 0 5rem;
-    font-weight: lighter;
-    color: #DA5B5B; }
+#gallery {
+  background-color: #454243;
+  display: inline-block;
+  clear: both; }
+  #gallery h2 {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    padding: 2rem 0; }
+  #gallery .gallery_info {
+    background-color: #4d494b;
+    padding: 0 0 2rem 0; }
+    #gallery .gallery_info h3 {
+      color: #eae9e9;
+      font-size: 1.5em;
+      font-weight: 400; }
+    #gallery .gallery_info .sub_title {
+      color: #9f9b9c;
+      font-weight: 300;
+      font-size: 1.5em; }
+  #gallery #gallery_box {
+    background-color: #4d494b;
+    padding: 2rem; }
+    #gallery #gallery_box .gallery_item {
+      padding: .5rem 0;
+      margin: 0 auto;
+      float: center; }
+      #gallery #gallery_box .gallery_item img {
+        width: 100%;
+        max-width: 100%; }
+        #gallery #gallery_box .gallery_item img:hover {
+          transition: .2s ease-in-out;
+          opacity: .8; }
+
+#contact h2 {
+  color: #FFFFFF;
+  padding: 4rem 0 0 0;
+  font-size: 2.5rem;
+  font-weight: 300; }
 #contact .inner {
-  height: 80vh;
+  min-height: 300px;
   background-color: #454243; }
   #contact .inner form {
     margin: 0 auto;
-    padding: 5rem 0;
+    padding: 3rem 0 5rem 0;
     text-align: center;
     	/* border-radius: 0;
     	color: $medium-grey;
@@ -669,13 +693,14 @@ body {
     }*/ }
     #contact .inner form input[type="email"], #contact .inner form input[type="text"] {
       width: 100%;
-      height: 2.5rem;
+      height: 2rem;
       padding: 1.4rem 1rem;
       background: transparent;
       margin-bottom: 1rem;
       border-bottom: 2px solid #bfc0c0;
       border-top: none;
       border-right: none;
+      border-radius: 5px;
       color: #bfc0c0; }
     #contact .inner form a:focus,
     #contact .inner form input:focus,
@@ -729,16 +754,27 @@ body {
         transition: color .3s ease-in-out;
         color: #6c6769; }
 
-@media only screen and (min-width: 350px) {
-  #contact .inner {
-    height: 70vh; }
-    #contact .inner form {
-      padding: 6rem 0; }
-      #contact .inner form input[type="email"], #contact .inner form input[type="text"] {
-        height: 1.5	rem;
-        padding: 2rem 2rem;
-        background: transparent;
-        margin-bottom: 1rem; } }
+@media only screen and (min-width: 450px) {
+  #contact .inner form {
+    padding: 2rem 0; }
+    #contact .inner form input[type="email"], #contact .inner form input[type="text"] {
+      height: 1.5	rem;
+      padding: 2rem 2rem;
+      background: transparent;
+      margin-bottom: 1rem; } }
+@media only screen and (min-width: 650px) {
+  #gallery #gallery_box {
+    width: 50%;
+    min-height: 780px;
+    float: left;
+    margin: 0 auto; }
+    #gallery #gallery_box .gallery_info {
+      min-height: 380px;
+      padding: .5rem; }
+    #gallery #gallery_box .gallery_item {
+      float: left;
+      width: 50%;
+      padding: .5rem; } }
 @media only screen and (min-width: 980px) {
   #front-page {
     /*background-image: url("../assets/mac.png"); */
@@ -758,9 +794,12 @@ body {
         width: 50%;
         float: left; }
       #projects ul li .project_overview {
-        padding: 2rem 5rem;
+        padding: 0 5rem;
         width: 50%;
         float: right; }
+
+  #gallery #gallery_box .gallery_info {
+    min-height: 280px; }
 
   #contact .wrapper {
     width: 50%; } }
