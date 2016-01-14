@@ -484,7 +484,7 @@ body {
 
 #main_header {
   color: #454243;
-  background: rgba(250, 250, 250, 0.75);
+  background: rgba(250, 250, 250, 0.9);
   position: fixed;
   width: 100%;
   display: block;
@@ -579,8 +579,6 @@ body {
     padding: 2.5rem 0;
     text-align: center;
     list-style: none; }
-    #projects ul a {
-      text-decoration: none; }
     #projects ul li {
       padding: 6rem 0;
       width: 100%;
@@ -597,6 +595,11 @@ body {
       #projects ul li .project_overview {
         padding: 2rem 0;
         text-align: left; }
+        #projects ul li .project_overview a {
+          text-decoration: none; }
+          #projects ul li .project_overview a:hover {
+            transition: .2s ease-in-out;
+            font-color: #DA5B5B; }
         #projects ul li .project_overview h2 {
           color: #454243;
           margin: 0; }
@@ -616,9 +619,6 @@ body {
             padding: .55rem 5rem 0 0; }
         #projects ul li .project_overview p {
           color: #5f5b5c; }
-        #projects ul li .project_overview:hover h2, #projects ul li .project_overview:hover p {
-          transition: .2s ease-in-out;
-          color: #383636; }
         #projects ul li .project_overview .tech {
           text-align: left; }
           #projects ul li .project_overview .tech h4 {
@@ -638,7 +638,7 @@ body {
                 font-size: .7rem; }
 
 #gallery {
-  background-color: #454243;
+  background-image: linear-gradient(#454243, black);
   display: inline-block;
   clear: both; }
   #gallery h2 {
@@ -671,6 +671,16 @@ body {
         #gallery #gallery_box .gallery_item img:hover {
           transition: .2s ease-in-out;
           opacity: .8; }
+    #gallery #gallery_box .gallery_item_logo {
+      padding: .5rem 0;
+      margin: 0 auto;
+      text-align: center; }
+      #gallery #gallery_box .gallery_item_logo img {
+        width: 25%;
+        max-width: 100%; }
+        #gallery #gallery_box .gallery_item_logo img:hover {
+          transition: .2s ease-in-out;
+          opacity: .8; }
 
 #contact h2 {
   color: #FFFFFF;
@@ -679,7 +689,7 @@ body {
   font-weight: 300; }
 #contact .inner {
   min-height: 300px;
-  background-color: #454243; }
+  background-image: linear-gradient(#454243, #383636); }
   #contact .inner form {
     margin: 0 auto;
     padding: 3rem 0 5rem 0;
@@ -765,7 +775,8 @@ body {
 @media only screen and (min-width: 650px) {
   #gallery #gallery_box {
     width: 50%;
-    min-height: 780px;
+    min-height: 900px;
+    max-height: 900px;
     float: left;
     margin: 0 auto; }
     #gallery #gallery_box .gallery_info {
@@ -774,7 +785,14 @@ body {
     #gallery #gallery_box .gallery_item {
       float: left;
       width: 50%;
-      padding: .5rem; } }
+      padding: .5rem; }
+    #gallery #gallery_box .gallery_item_logo {
+      margin: 0 auto;
+      padding: 2rem 0 .5rem 0; }
+      #gallery #gallery_box .gallery_item_logo img {
+        float: center;
+        width: 25%;
+        padding: 2rem 0 .5rem 0; } }
 @media only screen and (min-width: 980px) {
   #front-page {
     /*background-image: url("../assets/mac.png"); */
