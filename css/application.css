@@ -489,7 +489,7 @@ body {
   width: 100%;
   display: block;
   border-bottom: 1px solid #DEDFE6;
-  z-index: 100; }
+  z-index: 999; }
   #main_header .logo {
     float: left;
     width: 65px;
