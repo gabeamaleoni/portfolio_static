@@ -658,29 +658,30 @@ body {
       color: #9f9b9c;
       font-weight: 300;
       font-size: 1.5em; }
-  #gallery #gallery_box {
-    background-color: #4d494b;
-    padding: 2rem; }
-    #gallery #gallery_box .gallery_item {
-      padding: .5rem 0;
-      margin: 0 auto;
-      float: center; }
-      #gallery #gallery_box .gallery_item img {
-        width: 100%;
-        max-width: 100%; }
-        #gallery #gallery_box .gallery_item img:hover {
-          transition: .2s ease-in-out;
-          opacity: .8; }
-    #gallery #gallery_box .gallery_item_logo {
-      padding: .5rem 0;
-      margin: 0 auto;
-      text-align: center; }
-      #gallery #gallery_box .gallery_item_logo img {
-        width: 25%;
-        max-width: 100%; }
-        #gallery #gallery_box .gallery_item_logo img:hover {
-          transition: .2s ease-in-out;
-          opacity: .8; }
+  #gallery #gallery_outer {
+    background-color: #4d494b; }
+    #gallery #gallery_outer #gallery_box {
+      padding: 2rem 7.5%; }
+      #gallery #gallery_outer #gallery_box .gallery_item {
+        padding: .5rem;
+        margin: 0 auto;
+        float: center; }
+        #gallery #gallery_outer #gallery_box .gallery_item img {
+          width: 100%;
+          max-width: 100%; }
+          #gallery #gallery_outer #gallery_box .gallery_item img:hover {
+            transition: .2s ease-in-out;
+            opacity: .8; }
+      #gallery #gallery_outer #gallery_box .gallery_item_logo {
+        padding: .5rem 0;
+        margin: 0 auto;
+        text-align: center; }
+        #gallery #gallery_outer #gallery_box .gallery_item_logo img {
+          width: 25%;
+          max-width: 100%; }
+          #gallery #gallery_outer #gallery_box .gallery_item_logo img:hover {
+            transition: .2s ease-in-out;
+            opacity: .8; }
 
 #contact h2 {
   color: #FFFFFF;
@@ -773,26 +774,28 @@ body {
       background: transparent;
       margin-bottom: 1rem; } }
 @media only screen and (min-width: 650px) {
-  #gallery #gallery_box {
-    width: 50%;
-    min-height: 900px;
-    max-height: 900px;
-    float: left;
-    margin: 0 auto; }
-    #gallery #gallery_box .gallery_info {
-      min-height: 380px;
-      padding: .5rem; }
-    #gallery #gallery_box .gallery_item {
-      float: left;
+  #gallery {
+    width: 100%; }
+    #gallery #gallery_box {
+      padding: 0 7.5%;
       width: 50%;
-      padding: .5rem; }
-    #gallery #gallery_box .gallery_item_logo {
-      margin: 0 auto;
-      padding: 2rem 0 .5rem 0; }
-      #gallery #gallery_box .gallery_item_logo img {
-        float: center;
-        width: 25%;
-        padding: 2rem 0 .5rem 0; } }
+      min-height: 900px;
+      max-height: 900px;
+      float: left;
+      margin: 0 auto; }
+      #gallery #gallery_box .gallery_info {
+        min-height: 380px;
+        padding: .5rem; }
+      #gallery #gallery_box .gallery_item {
+        float: left;
+        width: 50%; }
+      #gallery #gallery_box .gallery_item_logo {
+        margin: 0 auto;
+        padding: 2rem 0 .5rem 0; }
+        #gallery #gallery_box .gallery_item_logo img {
+          float: center;
+          width: 25%;
+          padding: 2rem 0 .5rem 0; } }
 @media only screen and (min-width: 980px) {
   #front-page {
     /*background-image: url("../assets/mac.png"); */
@@ -803,18 +806,22 @@ body {
     #front-page .inner {
       padding-top: 11rem; }
 
-  #projects ul {
-    list-style: none; }
-    #projects ul li {
-      padding: 5rem 5rem;
-      display: inline-block; }
-      #projects ul li img {
-        width: 50%;
-        float: left; }
-      #projects ul li .project_overview {
-        padding: 0 5rem;
-        width: 50%;
-        float: right; }
+  #projects {
+    width: 75%;
+    max-width: 1400px;
+    margin: 0 auto; }
+    #projects ul {
+      list-style: none; }
+      #projects ul li {
+        padding: 5rem 0;
+        display: inline-block; }
+        #projects ul li img {
+          width: 50%;
+          float: left; }
+        #projects ul li .project_overview {
+          padding: 0 5rem;
+          width: 50%;
+          float: right; }
 
   #gallery #gallery_box .gallery_info {
     min-height: 280px; }

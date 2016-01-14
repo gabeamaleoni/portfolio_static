@@ -12,8 +12,8 @@
   <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
   <!-- Add fancyBox -->
-	<link rel="stylesheet" href="js/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-	<script type="text/javascript" src="js/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+	<link rel="stylesheet" href="js/source/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="js/source/jquery.fancybox.js"></script>
 
   <!-- Add Angular JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
@@ -64,7 +64,7 @@
 	<div id="front-page">
 		<div class="wrapper">
 			<div class="inner">
-				<h1 class="title">Hey, I'm Gabriel</h1>
+				<h1 class="title">Hey, my name is Gabriel</h1>
 				<p class="sub_title">I spend my time designing stuff, coding stuff, woodworking and being outside.</p>
 				<div class="links">
 					<a href="#info"><i class="fa fa-chevron-down"></i></a>
@@ -91,7 +91,7 @@
 
 
 	<!-- PROJECTS SECTION -->
-	<div id="projects" >
+	<div id="projects" class="wrapper">
 		<ul class="cf">
 			<div class="project_item">
 				<li>
@@ -108,7 +108,6 @@
 						<div class="name"><h2>ventur</h2><span>alpha</span></div>
 						<p>ventur.herokuapp.com</p></a>
 						<p>Took concept from idea to design to code. Ventur is a platform for sharing adventure-travel stories with a philanthropic twist - we integrate an affiliate program with outdoor retailers to make raising money for charity as simple as sharing the gear that you brought to make your trip happen.</p>
-					
 					<hr>
 						<div class="tech">
 							<h4>Technology used:</h4>
@@ -130,14 +129,13 @@
 			<hr class="hr_short">
 			<div class="project_item">
 				<li>
-					<a href="http://sunsetwoodworks.com/" target="blank">
 					<img src="img/sww.png" alt="ventur">
 					<div class="wrapper project_overview">
+						<a href="http://sunsetwoodworks.com/" target="blank">
 						  <h2>Sunset Woodworks</h2>
 							<p>sunsetwoodworks.com</p>
 						</a>
 						<p>I built this website for my woodworking/art project using Bootstrap. The page consists of a clean, fully responsive portfolio that showcases the various art pieces.</p>
-					
 					<hr>
 						<div class="tech">
 							<h4>Technology used:</h4>
@@ -180,44 +178,48 @@
 		<div class="gallery_title wrapper_wide">
 			<h2>Freelance Design & Development</h2>
 		</div>
-		<div id="gallery_box" class="cf">
-			<div class="gallery_info cf"> 
-				<h3>Coalo Valley Farms Website</h3>
-				<p class="sub_title">- Redesigned squarespace website for the LA-based cricket farm <br>
-					<br>
-				- Used <strong>Sketch</strong> and <strong>Illustrator </strong> to design cricket protein infographics</p>
-			</div>
-			<div class="gallery_item">
-				<a title="Landing Page for Squarespace website" class="fancybox" rel="group1" href="img/intro-page-big.jpg"><img src="img/intro-page-small.jpg" alt="Landing Page for Coalo Valley Farms" /></a>
-			</div>
-			<div class="gallery_item">
-				<a title="Call-to-action section for online store" class="fancybox" rel="group1" href="img/cricket_jumping_shop_big.png"><img src="img/cricket_jumping_shop_small.png" alt="Call-to-Action to direct user to Coalo's online store" /></a>
-			</div>
-			<div class="gallery_item">
-				<a title="Infographic to compare resource requirements" class="fancybox" rel="group1" href="img/resource_reqs_big.png"><img src="img/resource_reqs_small.png" alt="Landing Page for Coalo Valley Farms" /></a>
-			</div>
-			<div class="gallery_item cf">
-				<a title="Infographic to compare environmental impacts of cricket protein vs. beef." class="fancybox" rel="group1" href="img/environmental_impact_big.png"><img src="img/environmental_impact_small.png" alt="Environmental impact of beef vs cricket" /></a>
-			</div>
-		</div>
-		<div id="gallery_box" class="cf">
-			<div class="gallery_info cf"> 
-				<h3>The Hidden Green Financial Forecasting App</h3>
-				<p class="sub_title">- Designed financial forecasting web app & logo<br>
-					<br>
-				- Delivered wireframes to client (currently working out the backend functionality)</p>
-			</div>
-			<div class="gallery_item">
-				<a title="Landing Page for the Hidden Green Financial Forecaster Web app"class="fancybox" rel="group2" href="img/FI_graph_big.png"><img src="img/FI_graph_small.png"/>
-				</a>
-			</div>
-			<div class="gallery_item">
-				<a title="Mockup of Financial Independence Forecasting App" class="fancybox" rel="group2" href="img/HG_landing_page_big.png"><img src="img/HG_landing_page_small.png"/>
-				</a>
-			</div>
-			<div class="gallery_item_logo">
-				<a title="Hidden Green Logo - an evocation of finance, a life-path, and environmental stewardship" class="fancybox" rel="group2" href="img/HG_logo.png"><img src="img/HG_logo.png"/>
-				</a>
+		<div id="gallery_outer" class="cf">
+			<div id="gallery_inner" class="cf wrapper_wide">
+				<div id="gallery_box" class="cf">
+					<div class="gallery_info cf"> 
+						<h3>Coalo Valley Farms Website</h3>
+						<p class="sub_title">- Redesigned squarespace website for the LA-based cricket farm <br>
+							<br>
+						- Used <strong>Sketch</strong> and <strong>Illustrator </strong> to design cricket protein infographics</p>
+					</div>
+					<div class="gallery_item">
+						<a title="Landing Page for Squarespace website" class="fancybox" rel="group1" href="img/intro-page-big.jpg"><img src="img/intro-page-small.jpg" alt="Landing Page for Coalo Valley Farms" /></a>
+					</div>
+					<div class="gallery_item">
+						<a title="Call-to-action section for online store" class="fancybox" rel="group1" href="img/cricket_jumping_shop_big.png"><img src="img/cricket_jumping_shop_small.png" alt="Call-to-Action to direct user to Coalo's online store" /></a>
+					</div>
+					<div class="gallery_item">
+						<a title="Infographic to compare resource requirements" class="fancybox" rel="group1" href="img/resource_reqs_big.png"><img src="img/resource_reqs_small.png" alt="Landing Page for Coalo Valley Farms" /></a>
+					</div>
+					<div class="gallery_item cf">
+						<a title="Infographic to compare environmental impacts of cricket protein vs. beef." class="fancybox" rel="group1" href="img/environmental_impact_big.png"><img src="img/environmental_impact_small.png" alt="Environmental impact of beef vs cricket" /></a>
+					</div>
+				</div>
+				<div id="gallery_box">
+					<div class="gallery_info cf"> 
+						<h3>The Hidden Green Financial Forecasting App</h3>
+						<p class="sub_title">- Designed financial forecasting web app & logo<br>
+							<br>
+						- Delivered wireframes to client (currently working out the backend functionality)</p>
+					</div>
+					<div class="gallery_item">
+						<a title="Landing Page for the Hidden Green Financial Forecaster Web app" class="fancybox" rel="group2" href="img/HG_landing_page_big.png"><img src="img/HG_landing_page_small.png"/>
+						</a>
+					</div>
+					<div class="gallery_item">
+						<a title="Mockup of Financial Independence Forecasting App"class="fancybox" rel="group2" href="img/FI_graph_big.png"><img src="img/FI_graph_small.png"/>
+						</a>
+					</div>
+					<div class="gallery_item">
+						<a title="Hidden Green Logo - an evocation of the path to financial awareness and environmental stewardship" class="fancybox" rel="group2" href="img/hidden_green_header_lg.png"><img src="img/hidden_green_header_sm.png"/>
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

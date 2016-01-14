@@ -356,12 +356,12 @@ body {
 	display: inline-block;
 	clear: both;
 	h2 {
-			color: $white;
-			text-align: center;
-			font-size: 2.5rem; 
-			font-weight: 300;
-			padding: 2rem 0;
-		}
+		color: $white;
+		text-align: center;
+		font-size: 2.5rem; 
+		font-weight: 300;
+		padding: 2rem 0;
+	}
 	.gallery_info {
 		background-color: lighten($dark, 3%);
 		padding: 0 0 2rem 0;
@@ -375,33 +375,35 @@ body {
 			font-weight: 300;
 			font-size: 1.5em; 
 		}
-	}
-	#gallery_box {
-		background-color: lighten($dark, 3%);
-		padding: 2rem;
-		.gallery_item {
-			padding: .5rem 0;
-			margin: 0 auto;
-			float: center;
-			img {
-				width: 100%;
-				max-width: 100%;
-				&:hover {
-					transition: .2s ease-in-out;
-					opacity: .8;
+	}	
+	#gallery_outer {
+		background-color: lighten($dark, 3%);	
+		#gallery_box {
+			padding: 2rem 7.5%;
+			.gallery_item {
+				padding: .5rem;
+				margin: 0 auto;
+				float: center;
+				img {
+					width: 100%;
+					max-width: 100%;
+					&:hover {
+						transition: .2s ease-in-out;
+						opacity: .8;
+					}
 				}
 			}
-		}
-		.gallery_item_logo {
-			padding: .5rem 0;
-			margin: 0 auto;
-			text-align: center;
-			img {
-				width: 25%;
-				max-width: 100%;
-				&:hover {
-					transition: .2s ease-in-out;
-					opacity: .8;
+			.gallery_item_logo {
+				padding: .5rem 0;
+				margin: 0 auto;
+				text-align: center;
+				img {
+					width: 25%;
+					max-width: 100%;
+					&:hover {
+						transition: .2s ease-in-out;
+						opacity: .8;
+					}
 				}
 			}
 		}
@@ -525,7 +527,9 @@ body {
 
 @media only screen and (min-width: 650px) {
 	#gallery {
+		width: 100%;
 		#gallery_box {
+			padding: 0 7.5%;
 			width: 50%;
 			min-height: 900px;
 			max-height: 900px;
@@ -538,7 +542,6 @@ body {
 			.gallery_item {
 				float: left;
 				width: 50%;
-				padding: .5rem;
 			}
 			.gallery_item_logo {
 				margin: 0 auto;
@@ -565,10 +568,13 @@ body {
 		} 
 	}
 	#projects {
+		width: 75%;
+		max-width: 1400px;
+		margin: 0 auto;
 		ul {
 			list-style: none;
 			li {
-				padding: 5rem 5rem;
+				padding: 5rem 0;
 				display: inline-block;
 				img {
 					width: 50%;
