@@ -214,6 +214,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/macbook-profile-ventur.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.67081e+06,
+		"inputAbbreviatedPath": "\/img\/macbook-profile-ventur.png",
+		"outputAbbreviatedPath": "\/img\/macbook-profile-ventur.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/mockup_sunsetwoodworks.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3.12305e+06,
+		"inputAbbreviatedPath": "\/img\/mockup_sunsetwoodworks.png",
+		"outputAbbreviatedPath": "\/img\/mockup_sunsetwoodworks.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/portfolio.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -221,6 +243,17 @@
 		"initialSize": 54895,
 		"inputAbbreviatedPath": "\/img\/portfolio.jpg",
 		"outputAbbreviatedPath": "\/img\/portfolio.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/portfolio_home.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 403163,
+		"inputAbbreviatedPath": "\/img\/portfolio_home.png",
+		"outputAbbreviatedPath": "\/img\/portfolio_home.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -243,6 +276,17 @@
 		"initialSize": 1.82317e+06,
 		"inputAbbreviatedPath": "\/img\/profile_big.png",
 		"outputAbbreviatedPath": "\/img\/profile_big.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/profile_mockup.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.0014e+06,
+		"inputAbbreviatedPath": "\/img\/profile_mockup.jpg",
+		"outputAbbreviatedPath": "\/img\/profile_mockup.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -575,6 +619,15 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/ventur.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/ventur.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		}
 	},
 "hooks": [
