@@ -1,40 +1,163 @@
 <!DOCTYPE html>
 <html ng-app="contactApp">
 <head>
-  <title>ventur</title>
+  <title>Gabriel Leoni – ventur</title>
+	<!-- Add JQuery -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+  <!-- Add fancyBox -->
+	<link rel="stylesheet" href="js/source/jquery.fancybox.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="js/source/jquery.fancybox.js"></script>
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/application.css" rel="stylesheet">
 	
   <!-- load font_awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<!-- FancyBox Script -->
+  <script type="text/javascript">
+		$(document).ready(function() {
+			$(".fancybox").fancybox({
+		    autoSize: false, // shouldn't be true ?
+		    fitToView: true,
+		    maxWidth: 820,
+		    padding : 0,
+		    helpers : {
+	    	overlay : {
+          css : {
+              'background' : 'rgba(0, 0, 0, 0.75)'
+          }
+	      },
+        title: {
+	        type: 'outside'
+	        }
+		    }
+			});
+		});
+	</script>
+
 </head>
 <body>
-	<ul class="photo-grid">
-		<li>
-			<a href="http://www.flickr.com/photos/anirudhkoul/3536413126/">
-				<figure>
-					<img src="img/profile_mockup.jpg" height="180" width="320" alt="Arc de Triomphe">
-					<figcaption><p>Arc de Triomphe</p></figcaption>
-				</figure>
-			</a>
-		</li>
-		<li>
-			<a href="http://www.flickr.com/photos/aigle_dore/5237960181/">
-				<figure>
-					<img src="img/profile_mockup.jpg" height="180" width="320" alt="Eiffel Tower">
-					<figcaption><p>Eiffel Tower</p></figcaption>
-				</figure>
-			</a>
-		</li>
-		<li>
-			<a href="http://www.flickr.com/photos/aigle_dore/5238557764/">
-				<figure>
-					<img src="img/profile_mockup.jpg" height="180" width="320" alt="Notre Dame">
-					<figcaption><p>Notre Dame</p></figcaption>
-				</figure>
-			</a>
-		</li>
-	</ul>
+	<header id="main_header" class="cf">
+		<div class="wrapper_wide inner">
+			<a href="#front-page"><img src="img/portfolio_logo.png" class="logo" alt="GL"></a>
+			<nav>
+				<ul>
+					<a href="#projects"><li>Projects</li></a>
+					<a href="#contact"><li>Contact</li></a>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<!-- START PROJECT -->
+	<div id="projects" class="wrapper">
+		<ul class="cf">
+				<li>
+					<div class="wrapper project_overview">
+						<div class="name"><h2>ventur</h2><span>alpha</span></div>
+						<a href="http://ventur.herokuapp.com/" target="blank">
+							<p>ventur.herokuapp.com</p>
+						</a>
+						<p>Took concept from idea to design to code. Ventur is a platform for sharing adventure-travel stories with a philanthropic twist - we integrate an affiliate program with outdoor retailers to make raising money for charity as simple as sharing the gear that you brought to make your trip happen.</p>
+						<hr>
+						<div class="tech">
+							<h4>Technology used:</h4>
+							<ul>
+								<li><p>HTML5</p></li>
+								<li><p>CSS3</p></li>
+								<li><p>Sass</p></li>
+								<li><p>Ruby</p></li>
+								<li><p>Rails 4</p></li>
+								<li><p>SQL</p></li>
+								<li><p>Git</p></li>
+								<li><p>JavaScript</p></li>
+								<li><p>JQuery</p></li>
+							</ul>
+						</div>
+					</div>
+					<a class="fancybox" rel="group3" href="img/profile_mockup.jpg"><img class="hover-over"src="img/profile_mockup.jpg" title="ventur homepage with featured travel journals." />
+					</a>
+					<div class="hidden">
+						<a class="fancybox" href="img/slide-out-index.png" rel="group3" title="ventur home page with off canvas menu."></a>
+						<a class="fancybox" href="img/macbook-profile.png" rel="group3" title="User profile page with their journals listed below"></a>
+					</div>
+				</li>
+
+				<li>
+					<div class="full-page-mock center">
+						<h2 class="name">ventur landing page</h2>
+						<img src="img/landing-page-ventur.png" title="ventur homepage with featured travel journals." />
+					</div>
+				</li>
+
+				<li>
+					<div class="full-page-mock center">
+						<h2 class="name">a ventur journal</h2>
+						<img src="img/mockup_journal_show.png" title="ventur homepage with featured travel journals." />
+					</div>
+				</li>
+		</ul>
+	</div>
+	<div id="projects_new">
+		<h2 class="name center">Check out my other work too!</h2>
+		<ul class="photo-grid cf">
+			<li>
+				<a href="file:///Users/gabrielleoni/workspace/portfolio_static/coalo.html">
+					<figure>
+						<img src="img/intro-page-small.png" alt="Coalo Valley Farms">
+						<figcaption><p></p></figcaption>
+					</figure>
+					<h5 class="sub_title">Coalo Valley Farms<h5/>
+						
+				</a>
+				<p class="text_muted">web & graphic design</p>
+			</li>
+			<li>
+				<a href="file:///Users/gabrielleoni/workspace/portfolio_static/sww.html">
+					<figure>
+						<img src="img/sww.png" alt="Sunset Woodworks">
+						<figcaption><p></p></figcaption>
+					</figure>
+					<h5 class="sub_title">Sunset Woodworks<h5/>
+				</a>
+				<p class="text_muted">web design / branding</p>
+			</li>
+			<li><a href="http://www.flickr.com/photos/aigle_dore/5238557764/">
+					<figure>
+						<img src="img/mockup-FI-forecaster.jpg" height="180" width="320" alt="Notre Dame">
+						<figcaption><p></p></figcaption>
+					</figure>
+					<h5 class="sub_title">The Hidden Green<h5/>
+						<p class="text_muted">web design</p>
+				</a>
+			</li>
+			<li><a href="http://www.flickr.com/photos/aigle_dore/5238557764/">
+					<figure>
+						<img src="img/portfolio.jpg"  alt="Portfolio">
+						<figcaption><p></p></figcaption>
+					</figure>
+					<h5 class="sub_title">This Very Website<h5/>
+						<p class="text_muted">web design / development</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- FOOTER -->
+	<div id="footer" class="cf">
+		<div class="copyright">
+			<p>&copy; 2016 Gabriel Leoni</p>
+		</div>
+		<nav class="footer_nav">
+			<div class="links">
+					<a href="https://github.com/gabeamaleoni" target="blank" ><i class="fa fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/gabrielleoni" target="blank"><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.instagram.com/sunsetwoodworks/" target="blank"><i class="fa fa-instagram"></i></a>
+			</div>
+		</nav>
+	</div>
+
 </body>
 </html>
   

@@ -2,6 +2,15 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19102",
 "files": {
+	"\/coalo.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/coalo.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/contact-form.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -181,24 +190,35 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/intro-page-big.jpg": {
-		"fileType": 16384,
+	"\/img\/intro-page-big.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 990283,
-		"inputAbbreviatedPath": "\/img\/intro-page-big.jpg",
-		"outputAbbreviatedPath": "\/img\/intro-page-big.jpg",
+		"initialSize": 7.12923e+06,
+		"inputAbbreviatedPath": "\/img\/intro-page-big.png",
+		"outputAbbreviatedPath": "\/img\/intro-page-big.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/intro-page-small.jpg": {
-		"fileType": 16384,
+	"\/img\/intro-page-small.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/img\/intro-page-small.jpg",
-		"outputAbbreviatedPath": "\/img\/intro-page-small.jpg",
+		"initialSize": 439495,
+		"inputAbbreviatedPath": "\/img\/intro-page-small.png",
+		"outputAbbreviatedPath": "\/img\/intro-page-small.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/landing-page-ventur.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5.20668e+06,
+		"inputAbbreviatedPath": "\/img\/landing-page-ventur.png",
+		"outputAbbreviatedPath": "\/img\/landing-page-ventur.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -214,13 +234,35 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/macbook-profile-ventur.png": {
+	"\/img\/macbook-profile.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 4.67081e+06,
-		"inputAbbreviatedPath": "\/img\/macbook-profile-ventur.png",
-		"outputAbbreviatedPath": "\/img\/macbook-profile-ventur.png",
+		"initialSize": 1.47382e+06,
+		"inputAbbreviatedPath": "\/img\/macbook-profile.png",
+		"outputAbbreviatedPath": "\/img\/macbook-profile.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/mockup-FI-forecaster.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 582249,
+		"inputAbbreviatedPath": "\/img\/mockup-FI-forecaster.jpg",
+		"outputAbbreviatedPath": "\/img\/mockup-FI-forecaster.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/mockup_journal_show.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.87457e+06,
+		"inputAbbreviatedPath": "\/img\/mockup_journal_show.png",
+		"outputAbbreviatedPath": "\/img\/mockup_journal_show.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -313,11 +355,33 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/slide-out-index.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3.66226e+06,
+		"inputAbbreviatedPath": "\/img\/slide-out-index.png",
+		"outputAbbreviatedPath": "\/img\/slide-out-index.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/sww-full-page.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.99579e+06,
+		"inputAbbreviatedPath": "\/img\/sww-full-page.png",
+		"outputAbbreviatedPath": "\/img\/sww-full-page.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/sww.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1.7379e+06,
+		"initialSize": 1.04408e+06,
 		"inputAbbreviatedPath": "\/img\/sww.png",
 		"outputAbbreviatedPath": "\/img\/sww.png",
 		"outputPathIsOutsideProject": 0,
@@ -619,6 +683,15 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/sww.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/sww.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/ventur.html": {
 		"fileType": 8192,
