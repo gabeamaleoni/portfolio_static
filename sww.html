@@ -12,9 +12,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/application.css" rel="stylesheet">
 
+  <!-- Add Angular JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
+  <script src="js/ng-app.js"></script>
+  <script src="js/controllers.js"></script>
+
   <!-- load font_awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+  <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
 	<!-- FancyBox Script -->
   <script type="text/javascript">
 		$(document).ready(function() {
@@ -41,10 +46,10 @@
 <body>
 	<header id="main_header" class="cf">
 		<div class="wrapper_wide inner">
-			<a href="file:///Users/gabrielleoni/workspace/portfolio_static/index.html"> <img src="img/portfolio_logo.png" class="logo" alt="GL"></a>
+			<a href="http://gabeleoni.com"> <img src="img/portfolio_logo.png" class="logo" alt="GL"></a>
 			<nav>
 				<ul>
-					<a href="#projects"><li>Projects</li></a>
+					<a href="#projects_new"><li>Projects</li></a>
 					<a href="#contact"><li>Contact</li></a>
 				</ul>
 			</nav>
@@ -92,18 +97,17 @@
     <div class="spacer-sm"></div>
 		<ul class="photo-grid cf">
 			<li>
-				<a href="file:///Users/gabrielleoni/workspace/portfolio_static/coalo.html">
+				<a href="http://gabeleoni.com/coalo.html">
 					<figure>
 						<img src="img/intro-page-big.png" alt="Coalo Valley Farms">
 						<figcaption><p></p></figcaption>
 					</figure>
 					<h5 class="sub_title">Coalo Valley Farms<h5/>
-
 				</a>
 				<p class="text_muted">web & graphic design</p>
 			</li>
 			<li>
-				<a href="file:///Users/gabrielleoni/workspace/portfolio_static/ventur.html">
+				<a href="http://gabeleoni.com/ventur.html">
 					<figure>
 						<img src="img/profile_mockup.jpg" alt="Arc de Triomphe">
 						<figcaption><p></p></figcaption>
@@ -113,7 +117,7 @@
 				<a href="http://ventur.herokuapp.com/" target="blank"><p>www.ventur.herokuapp.com</p></a>
 				<p class="text_muted">web design / development</p>
 			</li>
-			<li><a href="file:///Users/gabrielleoni/workspace/portfolio_static/hidden_green.html">
+			<li><a href="http://gabeleoni.com/hidden_green.html">
 					<figure>
 						<img src="img/mockup-FI-forecaster.jpg" height="180" width="320" alt="Notre Dame">
 						<figcaption><p></p></figcaption>
@@ -122,7 +126,7 @@
 						<p class="text_muted">web design</p>
 				</a>
 			</li>
-			<li><a href="file:///Users/gabrielleoni/workspace/portfolio_static/index.html">
+			<li><a href="http://gabeleoni.com">
 					<figure>
 						<img src="img/mockup_portfolio.png"  alt="Portfolio">
 						<figcaption><p></p></figcaption>
@@ -133,6 +137,33 @@
 			</li>
 		</ul>
 	</div>
+  <div id="contact"  ng-app="contactApp">
+      <div class="inner">
+          <div ng-controller="ContactController">
+							<h2 class="title center">Let's connect!</h2>
+              <form ng-submit="submit(contactform)" name="contactform" method="post" action="" role="form" novalidate>
+                  <div class="form-group wrapper" >
+                      <div ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
+                          <input ng-model="formData.inputName" type="text" class="form-control" id="inputName" name="inputName" placeholder="Your Name" required>
+                      </div>
+                  </div>
+                  <div class="form-group wrapper cf" >
+                      <div ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
+                          <input ng-model="formData.inputEmail" type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Your Email" required>
+                      </div>
+                  </div>
+                  <p ng-class="result" style="color: white; padding: 25px; margin: 0;">{{ resultMessage }}</p>
+                  <div class="form-group">
+                      <div class="wrapper_skinny">
+                          <button type="submit" class="button_blue" ng-disabled="submitButtonDisabled">
+                              Send!
+                          </button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
 	<!-- FOOTER -->
 	<div id="footer" class="cf">
 		<div class="copyright">
@@ -146,6 +177,6 @@
 			</div>
 		</nav>
 	</div>
-
+<script src="js/app.js"></script>
 </body>
 </html>
