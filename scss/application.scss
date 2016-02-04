@@ -44,8 +44,21 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
+.spacer {
+	clear: both;
+	height: 100px;
+	width: 100%;
+}
+
+.spacer-sm {
+	clear: both;
+	height: 40px;
+	width: 100%;
+}
+
 .name {
 	font-weight: 400;
+	clear:both;
 	font-size: 1.6rem;
 	color: lighten($dark, 10%);
 }
@@ -195,7 +208,7 @@ body {
 				display: inline-block;
 				padding: .5rem 0;
 				margin-left: .4rem;
-				
+
 			}
 		}
 	}
@@ -205,71 +218,71 @@ body {
 
 
 
-#front-page { 
-	height: 90vh; 
-	max-height: 740px; 
-	min-height: 740px; 
-	width: 100vw; 
+#front-page {
+	height: 90vh;
+	max-height: 740px;
+	min-height: 740px;
+	width: 100vw;
 	background: none;
-	.inner { 
-		padding-top: 8rem; 
-		width: 400px; 
-		max-width: 100%; 
-		.title { 
-			color: #3D3F4F; 
-			font-size: 2.5em; 
-			margin: 0.5em 0 0 0; 
+	.inner {
+		padding-top: 8rem;
+		width: 400px;
+		max-width: 100%;
+		.title {
+			color: #3D3F4F;
+			font-size: 2.5em;
+			margin: 0.5em 0 0 0;
 		}
-		.sub_title { 
-			color: #6C6D79; 
-			font-size: 1.5em; 
+		.sub_title {
+			color: #6C6D79;
+			font-size: 1.5em;
 			margin-bottom: 1rem;
 			font-weight: 300;
 		}
 		.fa {
 			padding: 1rem 0;
-			font-size: 1.5rem; 
-			color: $red; 
+			font-size: 1.5rem;
+			color: $red;
 		}
 	}
 	.logo { width: 35px; }
 }
-#info { 
+#info {
 	color: #fff;
 	margin-top: -200px;
-	.top { 
-		height: 0; 
-		border-width: 0 100vw 200px 0; 
-		border-style: solid; 
-		border-color: transparent transparent $dark transparent; 
+	.top {
+		height: 0;
+		border-width: 0 100vw 200px 0;
+		border-style: solid;
+		border-color: transparent transparent $dark transparent;
 	}
-	.info_inner { 
-		background-color: $dark; 
+	.info_inner {
+		background-color: $dark;
 		padding: 1rem 0 4rem 0;
-		.inner { 
-			width: 100%; 
-			max-width: 95%; 
-			.info_icons { 
-				width: 350px; 
-				max-width: 95%; 
-				margin-bottom: 2rem; 
+		.inner {
+			width: 100%;
+			max-width: 95%;
+			.info_icons {
+				width: 350px;
+				max-width: 95%;
+				margin-bottom: 2rem;
 			}
-			.title { 
-				font-size: 2.5rem; 
+			.title {
+				font-size: 2.5rem;
 				font-weight: 300;
-				margin: 0 0 .75rem 0; 
+				margin: 0 0 .75rem 0;
 			}
-			.sub_title { 
-				font-size: 1.35rem; 
-				color: lighten($dark, 35%); 
-				margin-bottom: 4rem; 
+			.sub_title {
+				font-size: 1.35rem;
+				color: lighten($dark, 35%);
+				margin-bottom: 4rem;
 				font-weight: 300;
 			}
-		} 
+		}
 	}
-	.bottom { 
-		height: 3rem; 
-		background-color: $dark; 
+	.bottom {
+		height: 3rem;
+		background-color: $dark;
 	}
 }
 
@@ -297,9 +310,9 @@ body {
 			display: block;
 			margin: 1rem auto 0 auto;
 		}
-		p { 
+		p {
 			display: inline-block;
-			text-transform: lowercase; 
+			text-transform: lowercase;
 			font-size: .7rem;
 			margin: 0 1rem 2rem 0;
 		}
@@ -396,27 +409,28 @@ body {
 				}
 			}
 			.project_overview {
-				padding: 5rem 0 5rem 0;
+				padding: 5rem 0;
 				text-align: left;
 				a {
 					text-decoration: none;
 					&:hover {
 						transition: .2s ease-in-out;
+						border-bottom: none;
 						font-color: $red;
 					}
 				}
-				h2 {
+				h1 {
 					color: $dark;
 					margin: 0;
 					font-weight: 400;
-					font-size: 1.4rem;
+					font-size: 3.4rem;
 				}
 				.name {
 					display: inline-block;
-					width: 12rem;
-					h2 {
+					width: 28rem;
+					h1 {
 					font-weight: 400;
-					font-size: 1.4rem;
+					font-size: 3.4rem;
 					color: $dark;
 					float: left;
 					}
@@ -425,7 +439,7 @@ body {
 						text-decoration: none;
 						color: $medium-grey;
 						float: right;
-    				padding: .55rem 5rem 0 0;
+    				padding: 2.4rem 5.5rem 0 0;
 					}
 				}
 				p {
@@ -466,7 +480,7 @@ body {
 	h2 {
 		color: $white;
 		text-align: center;
-		font-size: 2.5rem; 
+		font-size: 2.5rem;
 		font-weight: 300;
 		padding: 2rem 0;
 	}
@@ -474,18 +488,18 @@ body {
 		background-color: lighten($dark, 3%);
 		padding: 0 0 2rem 0;
 		h3 {
-			color: lighten($dark, 65%); 
-			font-size: 1.5em; 
+			color: lighten($dark, 65%);
+			font-size: 1.5em;
 			font-weight: 400;
 		}
 		.sub_title {
 			color: lighten($dark, 35%);
 			font-weight: 300;
-			font-size: 1.5em; 
+			font-size: 1.5em;
 		}
-	}	
+	}
 	#gallery_outer {
-		background-color: lighten($dark, 3%);	
+		background-color: lighten($dark, 3%);
 		#gallery_box {
 			padding: 2rem 7.5%;
 			.gallery_item {
@@ -520,7 +534,7 @@ body {
 	h2 {
 		color: $white;
 		padding: 4rem 0 0 0;
-		font-size: 2.5rem; 
+		font-size: 2.5rem;
 		font-weight: 300;
 	}
 	.inner {
@@ -555,7 +569,7 @@ body {
 			textarea:focus {
 				outline: none;
 			  border-bottom:  2px solid darken($blue, 5%);
-			} 
+			}
 			button {
 				padding: .8rem 1.4rem;
 			}
@@ -585,11 +599,19 @@ body {
 	color: $white;
 }
 
+.full-page-mock {
+	width: 100%;
+	padding: 2.5% 0;
+	margin-bottom: 4rem;
+	display: inline-block;
+	float: left;
+}
+
 #footer {
 	width: 100%;
 	margin: 0;
 	padding: 1.3rem;
-	background-color: $red; 
+	background-color: $red;
 	.copyright {
 		float: left;
 		margin: 0;
@@ -635,7 +657,7 @@ body {
 @media only screen and (min-width: 650px) {
 	#projects_new {
 		width: 80%;
-		max-width: 1400px;
+		max-width: 1300px;
 		margin: 3rem auto;
 		.photo-grid li {
 			margin: 0 2.5%;
@@ -704,14 +726,12 @@ body {
 		}
 	}
 	.full-page-mock {
+		padding: 1%;
 		width: 50%;
-		padding: 2.5%;
-		display: inline-block;
-		float: left;
 	}
 	.full-page-mock-wide {
 		width: 100%;
-		padding: 2.5%;
+		padding: 2.5% 0;
 		margin: 0 auto;
 	}
 }
@@ -719,16 +739,16 @@ body {
 @media only screen and (min-width: 980px) {
 	#front-page {
 		background: none;
-		background-size: 850px; 
-		background-repeat: no-repeat; 
+		background-size: 850px;
+		background-repeat: no-repeat;
 		background-position: 100% 15%;
-		.inner { 
+		.inner {
 			padding-top: 11rem;
-		} 
+		}
 	}
 	#projects {
-		width: 80%;
-		max-width: 1400px;
+		width: 75%;
+		max-width: 1300px;
 		margin: 0 auto;
 		ul {
 			list-style: none;
@@ -739,8 +759,8 @@ body {
 					float: left;
 				}
 				.project_overview {
-					width: 65%;
-					float: left;
+					max-width: 1300px;
+					margin: 0;
 				}
 			}
 		}
