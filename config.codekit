@@ -47,6 +47,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/hidden_green.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/hidden_green.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/img\/chapter_big.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -124,28 +133,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/HG_landing_page_big.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.25408e+06,
-		"inputAbbreviatedPath": "\/img\/HG_landing_page_big.png",
-		"outputAbbreviatedPath": "\/img\/HG_landing_page_big.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/HG_landing_page_small.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 215899,
-		"inputAbbreviatedPath": "\/img\/HG_landing_page_small.png",
-		"outputAbbreviatedPath": "\/img\/HG_landing_page_small.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/HG_logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -201,13 +188,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/intro-page-small.png": {
+	"\/img\/landing-page-coalo.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 439495,
-		"inputAbbreviatedPath": "\/img\/intro-page-small.png",
-		"outputAbbreviatedPath": "\/img\/intro-page-small.png",
+		"initialSize": 4.1679e+06,
+		"inputAbbreviatedPath": "\/img\/landing-page-coalo.png",
+		"outputAbbreviatedPath": "\/img\/landing-page-coalo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -256,6 +243,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/mockup_HG.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 800077,
+		"inputAbbreviatedPath": "\/img\/mockup_HG.png",
+		"outputAbbreviatedPath": "\/img\/mockup_HG.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/mockup_journal_show.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -263,6 +261,17 @@
 		"initialSize": 1.87457e+06,
 		"inputAbbreviatedPath": "\/img\/mockup_journal_show.png",
 		"outputAbbreviatedPath": "\/img\/mockup_journal_show.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/mockup_portfolio.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 117489,
+		"inputAbbreviatedPath": "\/img\/mockup_portfolio.png",
+		"outputAbbreviatedPath": "\/img\/mockup_portfolio.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -307,6 +316,17 @@
 		"initialSize": 2637,
 		"inputAbbreviatedPath": "\/img\/portfolio_logo.png",
 		"outputAbbreviatedPath": "\/img\/portfolio_logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/profile-page.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.97857e+06,
+		"inputAbbreviatedPath": "\/img\/profile-page.png",
+		"outputAbbreviatedPath": "\/img\/profile-page.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
