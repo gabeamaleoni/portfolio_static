@@ -532,12 +532,12 @@ body {
 
 #front-page {
   height: 90vh;
-  max-height: 740px;
-  min-height: 740px;
+  max-height: 640px;
+  min-height: 640px;
   width: 100vw;
   background: none; }
   #front-page .inner {
-    padding-top: 8rem;
+    padding-top: 6rem;
     width: 400px;
     max-width: 100%; }
     #front-page .inner .title {
@@ -588,7 +588,7 @@ body {
     background-color: #454243; }
 
 #projects_new {
-  margin: 4rem 0; }
+  margin: 2rem 0; }
   #projects_new .photo-grid {
     margin: 0 auto;
     text-align: center;
@@ -701,7 +701,7 @@ body {
           font-size: 3.4rem; }
         #projects ul li .project_overview .name {
           display: inline-block;
-          width: 28rem; }
+          width: 100%; }
           #projects ul li .project_overview .name h1 {
             font-weight: 400;
             font-size: 3.4rem;
@@ -948,7 +948,7 @@ body {
     background-repeat: no-repeat;
     background-position: 100% 15%; }
     #front-page .inner {
-      padding-top: 11rem; }
+      padding-top: 9rem; }
 
   #projects {
     width: 75%;
