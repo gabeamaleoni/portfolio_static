@@ -50,7 +50,7 @@
 <body>
   <header id="main_header" class="cf">
 		<div class="wrapper_wide inner">
-			<a href="file:///Users/gabrielleoni/workspace/portfolio_static/index.html"> <img src="img/portfolio_logo.png" class="logo" alt="GL"></a>
+			<a href="file:///Users/gabrielleoni/workspace/portfolio_static/index.html"> <img src="img/GL-logo.png" class="logo" alt="GL"></a>
 			<nav>
 				<ul>
 					<a href="#projects_new"><li>Projects</li></a>
@@ -64,7 +64,8 @@
 	<div id="front-page">
 		<div class="wrapper">
 			<div class="inner">
-				<h1 class="title">Hey, my name is Gabriel</h1>
+				<h1 class="title-intro">Hey,</h1>
+        <span class="title-outro">my name is Gabriel</span> 
 				<p class="sub_title">I spend my time designing stuff, coding stuff, woodworking and being outside.</p>
 				<div class="links">
 					<a href="#info"><i class="fa fa-chevron-down"></i></a>
@@ -101,6 +102,16 @@
 				<a href="http://ventur.herokuapp.com/" target="blank"><p>www.ventur.herokuapp.com</p></a>
 				<p class="text_muted">web design / development</p>
 			</li>
+      <li>
+				<a href="http://gabeleoni.com/FIT.html">
+					<figure>
+						<img src="img/fit-landing-mock.png" alt="FIT">
+						<figcaption><p></p></figcaption>
+					</figure>
+					<h5 class="sub_title">The FIT Experience<h5/>
+				</a>
+				<p class="text_muted">web & graphic design</p>
+			</li>
 			<li>
 				<a href="http://gabeleoni.com/coalo.html">
 					<figure>
@@ -108,7 +119,6 @@
 						<figcaption><p></p></figcaption>
 					</figure>
 					<h5 class="sub_title">Coalo Valley Farms<h5/>
-
 				</a>
 				<p class="text_muted">web & graphic design</p>
 			</li>
@@ -167,7 +177,7 @@
 	<div id="contact"  ng-app="contactApp">
       <div class="inner">
           <div ng-controller="ContactController">
-							<h2 class="title center">Let's connect!</h2>
+							<h2 class="title center">Let's be friends</h2>
               <form ng-submit="submit(contactform)" name="contactform" method="post" action="" role="form" novalidate>
                   <div class="form-group wrapper" >
                       <div ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">

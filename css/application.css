@@ -441,18 +441,6 @@ body {
 .cf:after {
   clear: both; }
 
-#notice_wrapper {
-  width: 100%;
-  position: absolute;
-  background: rgba(208, 103, 82, 0.8);
-  z-index: 999; }
-  #notice_wrapper p {
-    color: #FFFFFF;
-    text-align: center;
-    font-weight: 700;
-    font-size: 1.25rem;
-    padding: 1.5rem 0; }
-
 .hr_short {
   width: 60%;
   height: 1px;
@@ -530,6 +518,10 @@ body {
   font-size: 1.75rem;
   margin: 0 0 .75rem 0; }
 
+@keyframes fade-content {
+  to {
+    opacity: 1;
+    transform: none; } }
 #front-page {
   height: 90vh;
   max-height: 640px;
@@ -540,7 +532,16 @@ body {
     padding-top: 6rem;
     width: 400px;
     max-width: 100%; }
-    #front-page .inner .title {
+    #front-page .inner .title-intro {
+      color: #3D3F4F;
+      font-size: 2.5em;
+      margin: 0.5em 0 0 0;
+      transform: perspective(800px) rotateX(-60deg) translateY(50px);
+      animation-duration: .8s;
+      opacity: 0;
+      animation-name: fade-content;
+      animation-fill-mode: forwards; }
+    #front-page .inner .title-outro {
       color: #3D3F4F;
       font-size: 2.5em;
       margin: 0.5em 0 0 0; }
