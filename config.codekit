@@ -38,6 +38,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/colors.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/colors.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/normalize.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -91,7 +100,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1.05289e+06,
+		"initialSize": 1.0344e+06,
 		"inputAbbreviatedPath": "\/img\/fit-landing-mock.png",
 		"outputAbbreviatedPath": "\/img\/fit-landing-mock.png",
 		"outputPathIsOutsideProject": 0,
@@ -105,17 +114,6 @@
 		"initialSize": 441201,
 		"inputAbbreviatedPath": "\/img\/FIT-landingpage.png",
 		"outputAbbreviatedPath": "\/img\/FIT-landingpage.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/GL-logo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 23595,
-		"inputAbbreviatedPath": "\/img\/GL-logo.png",
-		"outputAbbreviatedPath": "\/img\/GL-logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -149,6 +147,17 @@
 		"initialSize": 1.12261e+06,
 		"inputAbbreviatedPath": "\/img\/landing-page-ventur.png",
 		"outputAbbreviatedPath": "\/img\/landing-page-ventur.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/logo-gl-portfolio.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3100,
+		"inputAbbreviatedPath": "\/img\/logo-gl-portfolio.png",
+		"outputAbbreviatedPath": "\/img\/logo-gl-portfolio.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -338,6 +347,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/min\/ng-app-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/ng-app-min.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/ng-app-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/ng-app.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -515,6 +535,38 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/scss\/application.scss",
 		"outputAbbreviatedPath": "\/css\/application.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/scss\/buttons.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/buttons.scss",
+		"outputAbbreviatedPath": "\/css\/buttons.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/scss\/colors.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/colors.scss",
+		"outputAbbreviatedPath": "\/css\/colors.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

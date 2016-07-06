@@ -1,3 +1,5 @@
+var app = angular.module('contactApp', []);
+
 app.controller('ContactController', function ($scope, $http) {
     $scope.result = 'hidden'
     $scope.resultMessage;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="contactApp">
+<html>
 <head>
   <title>Gabriel Leoni</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,10 +15,6 @@
 	<link rel="stylesheet" href="js/source/jquery.fancybox.css" type="text/css" media="screen" />
 	<script type="text/javascript" src="js/source/jquery.fancybox.js"></script>
 
-  <!-- Add Angular JS -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script>
-  <script src="js/ng-app.js"></script>
-  <script src="js/controllers.js"></script>
   <!-- fonts -->
   <link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700' rel='stylesheet' type='text/css'>
   <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
@@ -50,7 +46,7 @@
 <body>
   <header id="main_header" class="cf">
 		<div class="wrapper_wide inner">
-			<a href="file:///Users/gabrielleoni/workspace/portfolio_static/index.html"> <img src="img/GL-logo.png" class="logo" alt="GL"></a>
+			<a href="http://gabeleoni.com">  <img src="img/logo-gl-portfolio.png" class="logo" alt="GL"></a>
 			<nav>
 				<ul>
 					<a href="#projects_new"><li>Projects</li></a>
@@ -65,7 +61,7 @@
 		<div class="wrapper">
 			<div class="inner">
 				<h1 class="title-intro">Hey,</h1>
-        <span class="title-outro">my name is Gabriel</span> 
+        <span class="title-outro">my name is Gabriel</span>
 				<p class="sub_title">I spend my time designing stuff, coding stuff, woodworking and being outside.</p>
 				<div class="links">
 					<a href="#info"><i class="fa fa-chevron-down"></i></a>
@@ -83,12 +79,18 @@
 						<!-- <img src="/assets/course_icons.svg" alt="Planning, Designing, Coding &amp; Launching" class="course_icons">-->
 						<h2 class="title">designer / developer / maker</h2>
 						<p class="sub_title">Below are some of the projects I've been working on.</p>
-						<a href="#contact" class="button">Get in touch</a>
+            <a href="mailto:gabeamaleoni@gmail.com?subject=hello" class="btn btn-fixed-width-lg">
+              <svg>
+                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+              </svg>
+             Get in touch
+             </a>
 					</div>
 				</div>
 			</div>
 	<div class="bottom"></div>
 	</div>
+
 	<div id="projects_new">
 		<ul class="photo-grid cf">
 			<li>
@@ -156,50 +158,17 @@
 
 
 
-	<!-- CONTACT
-	<div id="contact" ng-app="contactApp">
-		<div class="circle">
-			<p class="sub_title">Let's Connect</p>
-		</div>
-		<div class="inner" ng-controller="ContactController" >
-			<form ng-submit="submit(contactform)" name="contactform" method="post" action="" class="form-horizontal" role="form" novalidate>
-					<div class="wrapper" >
-	          <div ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
-	              <input ng-model="formData.inputEmail" type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Your Email" required>
-	          </div>
-	      	</div>
-					<div class"break"></div>
-					<button class="button_blue" type="submit" name="submit" value="submit">Get in touch</button>
-			</form>
-		</div>
-	</div> -->
-
-	<div id="contact"  ng-app="contactApp">
-      <div class="inner">
-          <div ng-controller="ContactController">
-							<h2 class="title center">Let's be friends</h2>
-              <form ng-submit="submit(contactform)" name="contactform" method="post" action="" role="form" novalidate>
-                  <div class="form-group wrapper" >
-                      <div ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
-                          <input ng-model="formData.inputName" type="text" class="form-control" id="inputName" name="inputName" placeholder="Your Name" required>
-                      </div>
-                  </div>
-                  <div class="form-group wrapper cf" >
-                      <div ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
-                          <input ng-model="formData.inputEmail" type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Your Email" required>
-                      </div>
-                  </div>
-                  <p ng-class="result" style="color: white; padding: 25px; margin: 0;">{{ resultMessage }}</p>
-                  <div class="form-group">
-                      <div class="wrapper_skinny">
-                          <button type="submit" class="button_blue" ng-disabled="submitButtonDisabled">
-                              Send!
-                          </button>
-                      </div>
-                  </div>
-              </form>
-          </div>
-      </div>
+	<!-- CONTACT -->
+	<div id="contact">
+		<h2 class="title center">Let's be friends</h2>
+    <div class="sub_title center">
+      <a href="mailto:gabeamaleoni@gmail.com?subject=hello" class="btn btn-fixed-width-sm">
+        <svg>
+          <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+        </svg>
+       message me
+       </a>
+    </div>
   </div>
 
 	<!-- FOOTER -->

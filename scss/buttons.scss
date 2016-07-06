@@ -1,0 +1,122 @@
+.button {
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  line-height: 27px;
+  font: {
+    weight: 100;
+    size: 22px;
+  }
+  border-radius: 1px;
+  padding: .7rem 1.5rem;
+  background: transparent;
+  color: $red;
+  border: 1px solid $red;
+  &:hover {
+  	transition: .2s ease-in-out;
+  	background: $red;
+  	color: $dark;
+  	border: 1px solid transparent;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  display: block;
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 40px;
+  padding: 3px auto;
+  margin: 0 auto 2em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+/////////////////////////////////
+//button fixed-width small
+///////////////////////////////
+.btn-fixed-width-sm {
+  background: transparent;
+  color: #fff;
+  min-width: 200px;
+  max-width: 200px;
+  letter-spacing: 2px;
+  padding-top: 4px;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+
+  svg {
+    border-radius: 2px;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2px;
+    stroke-dasharray: 222, 0;
+  }
+}
+
+.btn-fixed-width-sm:hover {
+  background: rgba(0,0,0, 0);
+  letter-spacing: 3px;
+
+  rect {
+    stroke-width: 2;
+    stroke-dasharray: 15, 375;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+/////////////////////////////////
+//button fixed-width large
+///////////////////////////////
+.btn-fixed-width-lg {
+  background: transparent;
+  margin: 0;
+  text-align: center;
+  color: $red;
+  min-width: 220px;
+  max-width: 220px;
+  letter-spacing: 2px;
+  padding-top: 4px;
+  transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+
+  svg {
+    border-radius: 2px;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  rect {
+    fill: none;
+    stroke: $red;
+    stroke-width: 2px;
+    stroke-dasharray: 222, 0;
+  }
+}
+
+.btn-fixed-width-lg:hover {
+  letter-spacing: 3px;
+
+  rect {
+    stroke-width: 2;
+    stroke-dasharray: 15, 405;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
