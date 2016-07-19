@@ -74,6 +74,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/balance-circumfit-sm.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34015,
+		"inputAbbreviatedPath": "\/img\/balance-circumfit-sm.png",
+		"outputAbbreviatedPath": "\/img\/balance-circumfit-sm.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/desktop-survey.png": {
 		"fileType": 32768,
 		"ignore": 0,
