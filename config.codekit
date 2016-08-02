@@ -85,6 +85,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/coalo-laptop.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 241519,
+		"inputAbbreviatedPath": "\/img\/coalo-laptop.png",
+		"outputAbbreviatedPath": "\/img\/coalo-laptop.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/desktop-survey.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -129,17 +140,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/intro-page-big.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 465672,
-		"inputAbbreviatedPath": "\/img\/intro-page-big.png",
-		"outputAbbreviatedPath": "\/img\/intro-page-big.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/landing-page-coalo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -177,7 +177,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 582249,
+		"initialSize": 670524,
 		"inputAbbreviatedPath": "\/img\/mockup-FI-forecaster.jpg",
 		"outputAbbreviatedPath": "\/img\/mockup-FI-forecaster.jpg",
 		"outputPathIsOutsideProject": 0,
